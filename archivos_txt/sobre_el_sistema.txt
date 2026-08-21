@@ -1,0 +1,5 @@
+
+Este es un sistema web de una Cafeteria que ofrece y vende cafe y otros productos y servicios.
+
+el sistema web de la caffettiera es un sistema de un restaurante llamado la caffettiera que se especializa en cafes, 
+cappuccinos, postres y trata de tener esencia de cafeteria italiana

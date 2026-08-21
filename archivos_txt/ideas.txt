@@ -1,0 +1,4 @@
+
+--- Frontend
+
+- Poner como fondo del frontend un video de una taza con el humo saliendo de ella

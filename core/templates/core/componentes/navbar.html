@@ -1,0 +1,79 @@
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg bg-black-opa-6 navbar-dark p-3">
+
+    <div class="container">
+
+        <!-- Logo -->
+
+        <a class="navbar-brand d-flex align-items-cente" href="#">
+            <img src="{% static 'core/img/logo.png' %}" 
+                 alt="Logo" 
+                 width="35" 
+                 height="35" 
+            >
+        </a>
+
+        <!-- Botón para móvil -->
+
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-center fs-5" id="navbarNav">
+
+            <ul class="navbar-nav gap-lg-5 mt-1 me-5">
+
+                <li class="nav-item">
+                    <a class="nav-link
+                    {% if request.resolver_match.url_name == 'home' %} active {%endif%}" 
+                    href="{% url 'home' %}">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link
+                    {% if request.resolver_match.url_name == 'about' %} active {%endif%}" 
+                    href="{% url 'about' %}">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link
+                    {% if request.resolver_match.url_name == 'servicios' %} active {%endif%}" 
+                    href="{% url 'servicios' %}">
+                        Servicios
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link
+                    {% if request.resolver_match.url_name == 'contacto' %} active {%endif%}" 
+                    href="{% url 'contacto' %}">
+                        Contacto
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link
+                    {% if request.resolver_match.url_name == 'blog' %} active {%endif%}" 
+                    href="{% url 'blog' %}">
+                        Blog
+                    </a>
+                </li>
+
+            </ul>
+            
+        </div>
+
+    </div>
+
+</nav>

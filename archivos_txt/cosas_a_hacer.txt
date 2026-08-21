@@ -1,0 +1,8 @@
+
+- Crear una funcion que tu defines el id de un registro que le quiero cambiar el id y el nuevo id:
+
+funcion(id_registro, nuevo_id)
+
+Una vez la funcion lo tiene, quiero que obtenga el registro determinado y todos los demas registros, luego elimine
+todos los registros en la tabla, reinicie el id de todos los registros guardados (en una lista podria ser), obviamente defina el nuevo 
+id del registro determinado, por ejemplo que sea el 2 y todos los ids posteriores pues van de 1 en 1, por ejemplo 3,4,5,6 

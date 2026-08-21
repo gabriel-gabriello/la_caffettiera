@@ -1,0 +1,31 @@
+
+.imagen-de-fondo {
+    background-image: url("../img/dark_coffe_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-black
+{
+  background: black;
+}
+
+.bg-black-opa-6
+{
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.bg-black-opa-9
+{
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.system-name 
+{
+  font-family: "Birthstone", cursive;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 3px;
+}

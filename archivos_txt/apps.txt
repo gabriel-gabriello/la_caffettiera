@@ -1,0 +1,59 @@
+
+--- Home
+
+La app home o el apartado home se encarga de darle una bienvenida y una introduccion sobre el sistema al usuario y en un futuro
+se pueden añadir mas cosas.
+
+Entidades:
+
+- Bienvenida
+- Introduccion
+
+--- About
+
+La app about es una app que se encarga de proporciona informacion sobre:
+
+- Los creadores del  negocio
+- Las personas detras del sistema
+- La historia del negocio 
+- La historia del sistema
+- Personas importantes en el negocio y sus datos y sus roles
+- Mision y vision de los dueños del negocio
+- Valores del negocio
+- Experiencia y logros del sistema
+- Para que se creo el sistema
+- Evolucion del negocio
+- Departamentos del negocio
+- y mucho mas
+
+Todo lo mencionado son datos y de estos datos se pueden sacar entidades.
+
+--- Servicios
+
+Bueno aqui es obvio, son los servicios que ofrece el negocio.
+
+--- Contacto
+
+En esta app se proporcionan datos como:
+
+- ubicacion (la ubicacion es una entidad) (podria poseer como atributo la direccion en google maps) 
+de la cafeteria (en un futuro podria tener varias sedes)
+- Sedes como entidades
+- horarios de apertura y cierre 
+- horarios de eventos
+- numero de telefono
+- whatsapp
+- redes sociales
+
+Ademas de esto puede poseer un formulario de contacto (podria ser otra pagina web en la seccion contacto)
+
+--- Blog
+
+- En blog pues los clasicos posts
+- Las clasicas categorias de posts
+
+Y obvio se puede añadir mas.
+
+--- Cosas a recordar
+
+- Recordemos que una app puede tener varias paginas webs no solo 1. 

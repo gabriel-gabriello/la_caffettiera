@@ -1,0 +1,52 @@
+
+{% extends 'core/layout.html' %}
+
+{% load static %}
+
+{% block titulo %}
+
+    <title>Home</title>
+    
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-10 text-light mt-5 bg-black-opa-9 p-5">
+
+            <h3>Bienvenido al sistema web de La Caffettiera ☕</h3>
+
+            <br>
+            
+            <p>Nos alegra tenerte aquí. La Caffettiera es un espacio inspirado en la tradición y el encanto de las cafeterías italianas, donde el café, los cappuccinos y los postres se convierten en una experiencia especial.</p>
+
+            <p class="mb-0">Disfruta de nuestro sistema y descubre todo lo que La Caffettiera tiene para ofrecerte.</p>
+
+        </div>
+
+    </div>
+
+    <div class="row d-flex justify-content-around">
+
+        <div class="col-12 col-lg-7 text-light mt-4 bg-black-opa-9 p-5">
+
+            <h3>Introduccion 📖</h3>
+
+            <br>
+            
+            <p>El Sistema Web de La Caffettiera ha sido desarrollado para facilitar la gestión y consulta de los diferentes servicios que ofrece nuestro restaurante. A través de este sistema se busca brindar una experiencia más organizada y sencilla, permitiendo administrar información relacionada con nuestros productos y servicios.</p>
+
+            <p class="mb-0">La Caffettiera se caracteriza por ofrecer una variedad de cafés, cappuccinos y postres, inspirados en la esencia y tradición de las cafeterías italianas. Este sistema busca complementar esa experiencia mediante una plataforma práctica, moderna y accesible.</p>
+
+        </div>
+
+        <div class="col-8 col-lg-4 text-light mt-4 p-5">
+
+            <img src="{% static 'core/img/cafe_italiano.jpg' %}" class="img-fluid" alt="">
+
+        </div>
+
+    </div>
+
+{% endblock %}
