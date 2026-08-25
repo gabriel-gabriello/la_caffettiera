@@ -1,24 +1,37 @@
 
 # Importaciones
 
+import os
+
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 # Ambito global
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(BASE_DIR / ".env") # Cargamos el archivo .dotenv del proyecto
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-22+@y+h$zm3(_i+uktlr+pds=vc1)5@@+pid7_p03=@ef1okv$'
+SECRET_KEY = os.environ["SECRET_KEY"]
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Tener Debug en False cuando el proyecto se encuentra en produccion y no en desarrollo
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = []
+# Lista de los allowed hosts
 
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS")
+
+if ALLOWED_HOSTS is not None and ALLOWED_HOSTS != "":
+    ALLOWED_HOSTS = ALLOWED_HOSTS.split(",")
+else:
+    ALLOWED_HOSTS = []
 
 # Application definition
 
