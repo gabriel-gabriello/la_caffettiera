@@ -1,7 +1,7 @@
 
 Cosas que hay que hacer:
 
-- Seguir con desplegar la app en render, vamos por el archivo env, sigamos con el chat de chat gpt
+- Seguir con desplegar la app en render, acabamos de terminar lo del archivo env ahora si creo que iremos con render
 
 - Video 41, minuto 0.35, vamos a seguir viendo el video y crear la pagina web basica de los servicios, escribir tambien que cada
 servicio puede tener su interfaz y su backend :)
