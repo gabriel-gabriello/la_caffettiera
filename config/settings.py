@@ -7,13 +7,15 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+import dj_database_url
+
 # Ambito global
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(BASE_DIR / ".env") # Cargamos el archivo .dotenv del proyecto
+load_dotenv(BASE_DIR / ".env") # Se cargan las variables de .env
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -81,17 +83,22 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
+# SGBD del proyecto
 
-# Database
-# https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+DB_ENGINE = os.environ.get("DB_ENGINE", "sqlite")
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if DB_ENGINE == "sqlite":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
-
+    
+elif DB_ENGINE == "postgresql":
+    DATABASES = {
+        "default": dj_database_url.config() # Busca en las variables cargadas de .env DATABASE_URL
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
