@@ -1,6 +1,8 @@
 
 Cosas que hay que hacer:
 
+- Nos quedamos en crear el super user y hay que explicar que es todo lo que hicimos.
+
 - Seguir con poner la app en produccion hoy si ya estamos en render seguir con los pasos de gpt, sin duda habra que hacer un push
 
 - Video 41, minuto 0.35, vamos a seguir viendo el video y crear la pagina web basica de los servicios, escribir tambien que cada

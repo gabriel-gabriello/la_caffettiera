@@ -138,9 +138,15 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # Esto le dice a django que al almacenar los archivos estaticos en staticfiles utilize WhiteNoise
 
 STORAGES = {
+
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
+
 }
 
 # Directorio media

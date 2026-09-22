@@ -12,7 +12,7 @@ class Servicio (models.Model):
     titulo = models.CharField(max_length=200, verbose_name="Titulo")
     subtitulo = models.CharField(max_length=200, verbose_name="Subtitulo")
     descripcion = models.TextField(verbose_name="Descripcion")
-    imagen = models.ImageField(upload_to="servicios/", verbose_name="Titulo")
+    imagen = models.ImageField(upload_to="servicios/", verbose_name="Imagen")
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
