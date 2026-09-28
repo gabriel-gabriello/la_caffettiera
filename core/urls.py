@@ -3,7 +3,7 @@
 
 from django.urls import path
 
-from core.views import get_home, get_about, get_servicios, get_contacto, get_blog
+from core.views import get_home, get_about, get_servicios, get_contacto, get_blog, prueba
 
 # Ambito global
 
@@ -18,5 +18,7 @@ urlpatterns = [
     path("contacto/", get_contacto, name="contacto"),
 
     path("blog/", get_blog, name="blog"),
+
+    path("prueba/", prueba)
 
 ]
