@@ -1,7 +1,8 @@
 
 Cosas que hay que hacer:
 
-- Nos quedamos en crear el super user y hay que explicar que es todo lo que hicimos.
+- Seguir con la creacion del disco duro virtual en claudeflare para que se den los archivos media y entender porque es mala
+practica que los ofrezca django o render
 
 - Seguir con poner la app en produccion hoy si ya estamos en render seguir con los pasos de gpt, sin duda habra que hacer un push
 
