@@ -2,10 +2,12 @@
 # Importaciones
 
 from django.shortcuts import render
-
-from django.http import HttpResponse, HttpRequest
+from django.http import HttpResponse, HttpRequest, FileResponse, Http404
+from django.conf import settings
 
 from servicios.models import Servicio
+
+from pathlib import Path
 
 import os
 
@@ -45,4 +47,17 @@ def prueba(http_request:HttpRequest):
         Tamaño: {os.path.getsize(ruta) if os.path.exists(ruta) else 'NO EXISTE'}
         """
     )
+
+# Es la funcion servidora de archivos media
+
+def servir_media(request:HttpRequest, path):
+
+    archivo = Path(settings.MEDIA_ROOT) / path
+
+    if not archivo.is_file():
+        raise Http404("Archivo no encontrado")
+
+    archivo_abierto = open(archivo, "rb")
+
+    return FileResponse(archivo_abierto)
 
